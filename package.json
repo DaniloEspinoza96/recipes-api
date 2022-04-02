@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app/server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/DaniloEspinoza96/recipes-api/issues"
   },
-  "homepage": "https://github.com/DaniloEspinoza96/recipes-api#readme"
+  "homepage": "https://github.com/DaniloEspinoza96/recipes-api#readme",
+  "devDependencies": {
+    "eslint": "^8.12.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
