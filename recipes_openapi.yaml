@@ -1,0 +1,25 @@
+openapi: '3.0.0'
+info:
+  title: recipes-api
+  version: '1.0.0'
+paths:
+  /health:
+    description: 'Health status, name and version of the API'
+    get:
+      responses:
+        '200':
+          description: 'Response OK'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: 'ok'
+                  name:
+                    type: string
+                    example: 'recipes-api'
+                  version:
+                    type: string
+                    example: '1.0.0'
